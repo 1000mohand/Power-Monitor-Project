@@ -1,0 +1,41 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "code"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"array": "cpp",
+			"deque": "cpp",
+			"string": "cpp",
+			"unordered_map": "cpp",
+			"unordered_set": "cpp",
+			"vector": "cpp",
+			"string_view": "cpp",
+			"initializer_list": "cpp",
+			"ranges": "cpp",
+			"regex": "cpp",
+			"*.tcc": "cpp",
+			"random": "cpp",
+			"istream": "cpp",
+			"ostream": "cpp",
+			"memory": "cpp",
+			"stop_token": "cpp",
+			"bitset": "cpp",
+			"utility": "cpp",
+			"map": "cpp",
+			"functional": "cpp",
+			"type_traits": "cpp",
+			"cmath": "cpp"
+		},
+		"C_Cpp.default.cppStandard": "gnu++17",
+		"C_Cpp.default.cStandard": "c11",
+		"C_Cpp.experimentalFeatures": "Enabled",
+		"C_Cpp.enhancedColorization": "Enabled",
+		"C_Cpp.intelliSenseEngineFallback": "Enabled"
+	}
+}

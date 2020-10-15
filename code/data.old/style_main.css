@@ -1,0 +1,36 @@
+/*  */
+
+
+hr{
+    color:lightslategrey;
+}
+
+.heading {
+    background-color: azure;
+    position: fixed ;
+    top : 0px;
+    left: 0px;
+    width: 100%;
+    border-bottom: lightslategrey;
+    border-style: hidden hidden solid hidden;
+}
+
+.button:visited, .button{
+        text-decoration: inherit;
+        color: #0a4646;
+        text-align: center;
+        border-radius: .1875rem;
+        transition: 0.3s ease-in-out;
+        display: inline-block;
+        border: 0;
+        background-color: rgb(188, 226, 226);
+        border: 1px solid lightsteelblue;
+        padding: 0.355em 1.111em 0.355em;
+        font-size: .8125rem;
+        font-weight: 500;
+        min-width: 5.888rem;
+}
+
+*{
+    color:#0e5e5e ;
+}

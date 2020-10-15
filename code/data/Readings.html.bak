@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Readings</title>
+        <link rel="stylesheet"type="text/css" href="style_main.css">
+        <link rel="stylesheet"   href="https://fonts.googleapis.com/css?family=Noto+Sans">
+
+        <script src="updater.js"></script> 
+    </head>
+
+    <body>
+        <div class="top-container" style="text-align: center;">
+            <text style="font-size: 21pt;font-weight: bold;">Hello! This is the Readings page</text><br>
+        </div>
+        <div class="header" id="main_header">
+            <text style="font-size: 21pt;font-weight: bold;">Readings</text>
+            <div class="navbar">
+                <a class="menu-item chosen" href="">      Readings</a>
+                <a class="menu-item" href="Controls.html">Controls</a>
+            </div>
+        </div>
+        
+
+        <div class="content">
+
+            <h2>LEDs</h2>
+
+            <p><strong>built-in</strong> &nbsp;&nbsp; <span id="led-built-in_r"></span> </p>
+            
+        </div>
+        <div class="content">
+
+            <h2>Sensors</h2>
+
+            <p><strong>pin 36</strong> &nbsp;&nbsp; <span id="s36_r"></span> </p><br>
+            <p><strong>pin 36</strong> &nbsp;&nbsp; <span id="s36_r"></span> </p><br>
+            <p><strong>pin 36</strong> &nbsp;&nbsp; <span id="s36_r"></span> </p><br>
+            <p><strong>pin 36</strong> &nbsp;&nbsp; <span id="s36_r"></span> </p><br>
+            <p><strong>pin 36</strong> &nbsp;&nbsp; <span id="s36_r"></span> </p><br>
+            <p><strong>pin 36</strong> &nbsp;&nbsp; <span id="s36_r"></span> </p><br>
+            <p><strong>pin 36</strong> &nbsp;&nbsp; <span id="s36_r"></span> </p><br>
+            <p><strong>pin 36</strong> &nbsp;&nbsp; <span id="s36_r"></span> </p><br>
+        </div>
+        
+        <br><br>        
+
+        <!--scripts-->
+        <script src="header_script.js"></script> 
+    </body>
+</html>

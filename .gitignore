@@ -1,0 +1,19 @@
+.vscode
+#proteus unimportant files
+*.log
+*.pdsbak
+*.workspace
+
+#latex auxaliry files
+*.aux
+*.xdv
+*.fls
+*.fdb_latexmake
+*.fdb_latexmk
+
+#other archeived files
+*.7z
+*.gz
+*.zip
+*.ext
+*.AppImage

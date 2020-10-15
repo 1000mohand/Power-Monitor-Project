@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <meta charset="utf-8">
+        <link rel="stylesheet"type="text/css" href="style_main.css">
+        <title>Readings</title>
+    </head>
+
+    <body>
+        <div class="top-container" style="text-align: center;">
+            <text style="font-size: 24pt;font-weight: bold;">Hello! This is the Readings page</text><br>
+        </div>
+
+        <div class="header" id="main_header">
+            <text style="font-size: 21pt;font-weight: bold;">Readings</text>
+
+            <div class="navbar">
+                <a class="menu-item chosen" href="">      Readings</a>
+                <a class="menu-item" href="Controls.html">Controls</a>
+            </div>
+
+        </div>
+        
+        <!--
+        <div class="content">
+
+            <h2>LEDs</h2>
+
+            <device device_id="LED" device_name="built-in" device_action="r_s" device_update_delay="500"></device><br>
+        </div>
+        -->
+
+        <div class="content">
+
+            <h2>Sensors</h2>
+
+            <device device_id="pin 36" device_name="pin 36 (VP)" device_action="r_a"></device>
+            <device device_id="pin 39" device_name="pin 39 (VN)" device_action="r_a"></device>
+            <device device_id="pin 34" device_action="r_a"></device>
+            <device device_id="pin 35" device_action="r_a"></device>
+            <device device_id="pin 32" device_action="r_a"></device>
+            <device device_id="pin 33" device_action="r_a"></device>
+            <!--<device device_id="pin 25" device_action="r_a"></device>
+            <device device_id="pin 26" device_action="r_a"></device>
+            <device device_id="pin 27" device_action="r_a"></device>
+            <device device_id="pin 14" device_action="r_a"></device>
+            <device device_id="pin 12" device_action="r_a"></device>
+            <device device_id="pin 13" device_action="r_a"></device>-->
+        </div>
+        
+        <br><br>        
+
+        <!--scripts-->
+        <script src="header_script.js"></script> 
+        <script src="device_loader.js"></script>
+        <link rel="stylesheet"   href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    </body>
+</html>

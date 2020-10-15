@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet"type="text/css" href="style_main.css">
+        <link rel="stylesheet"   href="https://fonts.googleapis.com/css?family=Noto+Sans">
+        <title>Control</title>
+    </head>
+
+    <body>
+        <div class="top-container" style="text-align: center;">
+            <text style="font-size: 24pt;font-weight: bold;">Hello! This is the Control page</text><br>
+        </div>
+
+        <div class="header" id="main_header">
+            <text style="font-size: 21pt;font-weight: bold;">Controls</text>
+
+            <div class="navbar">
+                <a class="menu-item" href="Readings.html">Readings</a>
+                <a class="menu-item chosen" href="">      Controls</a>
+            </div>
+
+        </div>
+
+
+
+        <div class="content"> 
+
+            <h2>LEDs</h2>
+
+            <p><strong>built-in</strong> &nbsp;&nbsp; <a class="button" href="/LED H">turn on</a> &nbsp;&nbsp; <a class="button" href="/LED L">turn off</a> </p>
+        </div>
+
+        <div class="content">
+
+            <h2>Sensors</h2>
+
+            <device device_id="pin 23" device_action='ctr'></device>
+            <device device_id="pin 22" device_action='ctr'></device>
+            <device device_id="pin 1" device_action='ctr'></device>
+            <device device_id="pin 3" device_action='ctr'></device>
+            <device device_id="pin 21" device_action='ctr'></device>
+            <device device_id="pin 19" device_action='ctr'></device>
+            <device device_id="pin 18" device_action='ctr'></device>
+            <device device_id="pin 5" device_action='ctr'></device>
+            <device device_id="pin 17" device_action='ctr'></device>
+            <device device_id="pin 16" device_action='ctr'></device>
+            <device device_id="pin 4" device_action='ctr'></device>                      
+            <device device_id="pin 2" device_action='ctr'></device>                      
+            <device device_id="pin 15" device_action='ctr'></device>                      
+            <br><br>
+        </div>
+
+        <br>
+        <br>
+
+
+        <!--scripts-->
+        <script src="header_script.js"></script> 
+        <script src="device_loader.js"></script>
+    </body>
+</html>

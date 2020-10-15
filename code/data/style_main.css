@@ -1,0 +1,124 @@
+/*  */
+body {
+    margin: 0;
+    font-family: Noto Sans, Verdana, Geneva, Tahoma, serif;
+    background: #3AAFA9;
+    color:      #17252A;
+    width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+.navbar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end !important;
+    align-items: flex-start;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+  
+.top-container {
+    font-family: serif;
+    background-color: #3AAFA9;
+    color: #FEFFFF;
+    padding: 10pt;
+    width: calc(100% - attr(padding-right) - attr(padding-left));
+    text-align: center;
+}
+
+.header {
+    background-color: inherit;
+    color: inherit;
+    width: 90%;
+    height: auto;
+    padding: 0px 5%;
+    display: flex;
+    box-shadow: 0 2pt 2pt lightgray;
+    border-top-left-radius: 16pt;
+    border-top-right-radius: 16pt;
+    /*transition: border-radius 0s;*/
+}
+
+main {
+    margin-top: 2em;
+}
+
+.content {
+    padding: 0.75rem 1.75rem;
+    background-color: #FEFFFF;
+    transition: 0ms;
+    width: clac(100% - attr(padding-right) - attr(padding-left));
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background: #DEF2F1;
+    color: #2B7A78;
+    align-items: center;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+hr{
+    color:lightslategrey;
+}
+
+.menu-item:visited, .menu-item{
+    text-decoration: inherit;
+    color: inherit;
+    text-align: center;
+    display: inline-block;
+    border: 0;
+    background-color: inherit;
+    padding: 1em 0.5ex;
+    margin: 0pt;
+    font-weight: bolder;
+    min-width: 5.888rem;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+/*item-back{
+        background-color: #FEFFFF;
+}*/
+
+.chosen{
+    background-color: #FEFFFF;  
+}
+
+.menu-item:hover{
+    text-decoration: inherit;
+    /*color: #BCE2E2;*/
+    background-color: #a7d8d5;
+}
+
+.button, button:visited {
+    display: inline-block;
+    text-decoration: inherit;
+    color: inherit;
+    text-align: center;
+    border-radius: 12pt;
+    border: 0;
+    background-color: #DEF2F1;  
+    padding: 1ex 0.5ex;
+    min-width: 5rem;
+    cursor: pointer;
+}
+
+.button:hover{
+    border-radius: 20pt;
+    background-color: #2B7A78;
+    color: white;
+}
+
+device{
+    white-space: pre;
+    display: block;
+    margin: 10pt 0
+}
+
+*{
+    transition: 0.3s ease-in-out;
+    /*transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;*/
+}
