@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<devices>
+  <muxs>
+    <mux select="3">
+      <name>mux1</name>
+      <pin>25, 26, 27</pin>
+      <read>34</read>
+      <control>
+        <switch>
+          <pin>23</pin>
+        </switch>
+      </control>
+      <en pin="9"/>
+    </mux>
+  </muxs>
+  <device name="fan" room="living" pin="36"/>
+  <device name="heater" pin="39" room="bed room 1"/>
+  <mainswitch room="bed room 1" name="switch 1"/>
+</devices>
