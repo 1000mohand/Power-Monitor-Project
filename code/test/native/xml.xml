@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<devices>
+  <muxs>
+    <mux select="3">
+      <name>mux1</name>
+      <select>25, 26, 27</select>
+      <read>34</read>
+      <control>
+        <switch>
+          <pin>23</pin>
+        </switch>
+      </control>
+    </mux>
+  </muxs>
+  <mainswitch>
+    <name>switch 1</name>
+    <room>
+      <name>bed room 1</name>
+      <device>
+        <name>heater</name>
+        <access>
+          <pin>39,14</pin>
+        </access>
+      </device>
+      <device>
+        <name>fan 2</name>
+        <mainswitch>switch 2</mainswitch>
+        <access>
+          <pin>45,11</pin>
+        </access>
+      </device>
+    </room>
+    <device>
+      <access>
+        <read>
+          <pin>36</pin>
+        </read>
+        <control>
+          <mux/>
+        </control>
+      </access>
+      <name>fan</name>
+      <room>living</room>
+    </device>
+  </mainswitch>
+</devices>

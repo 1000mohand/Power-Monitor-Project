@@ -1,0 +1,5 @@
+#include <Arduino.h>
+
+inline String operator""_s (const char *chs , std::size_t){
+	return String (chs);
+}

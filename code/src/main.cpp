@@ -8,7 +8,7 @@
 #include <tuple>
 
 #include <style.hpp>
-#include <reading.h>
+#include <devices.h>
 #include "AsyncServer.h"
 
 
@@ -30,7 +30,6 @@ const int   daylight_offset_sec = 0; // day light hour is no
                                      // longer standard in egypt.
 void printLocalTime();
 void keepPrintingLocalTime(void*);
-struct TimeParam {int delay_ms; String format;};
 
 
 ////////////////////////////////////////////////////////////////////////
@@ -45,17 +44,19 @@ void setup()
     // Starting SPIF File System (SPIFFS)
 
     SPIFFS.begin();                  // Start the SPI Flash Files System
+    
+
+    delay(5000);
+
+    // load the devices
+    Devices.begin();
 
 
-    // set the pin modes
-    pin_config();
-
-    delay(3000);
-
+#ifdef DEBUG
     Serial.println();
     Serial.println();
     Serial.println(__cplusplus);
-
+#endif
 
     // getting user name and password
 
@@ -75,20 +76,20 @@ void setup()
 
     if (not interacted) //AND
     if (SPIFFS.exists("/ssid") && SPIFFS.exists("/password")){
-        File f; size_t size; uint8_t* buff;
+        File f; size_t size; char* buff;
 
         f = SPIFFS.open("/ssid", "r");
         size = f.size();
-        buff = new uint8_t[size];
-        f.read(buff,size);
+        buff = new char[size];
+        f.readBytes(buff,size);
         ssid = (char*) buff;
         delete[] buff;
         f.close();
 
         f = SPIFFS.open("/password", "r");
         size = f.size();
-        buff = new uint8_t[size];
-        f.read(buff,size);
+        buff = new char[size];
+        f.readBytes(buff,size);
         password = (char*) buff;
         delete[] buff;
         f.close();
@@ -175,6 +176,9 @@ void setup()
 void loop(){
 
     digitalWrite(2,HIGH);
+
+    Devices.devices_list.begin();
+
     repeat(10){
         vTaskDelay(1000 / portTICK_PERIOD_MS);
         if (!manually_changed) digitalWrite(2,!digitalRead(2));

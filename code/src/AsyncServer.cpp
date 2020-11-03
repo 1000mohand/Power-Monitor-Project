@@ -5,7 +5,7 @@
 #include <freertos/task.h>
 
 #include <style.hpp>
-#include "reading.h"
+#include "devices.h"
 
 #include "AsyncServer.h"
 
@@ -44,7 +44,8 @@ void serverInit()
 
 
     server.onNotFound([](AsyncWebServerRequest *request){
-        Serial.println(request->url() + " was requested but not found!");
+        Serial.println(request->url() +
+                       " was requested but not found!");
         request->send(404, "text/html", "Not found");
     });
 
@@ -81,12 +82,14 @@ void turnOffRequest (AsyncWebServerRequest *request){
 
 void fileService    (AsyncWebServerRequest *request){
     Serial.print  ("new file request\t");
-    Serial.print("methode: "); Serial.println(request->methodToString());
+    Serial.print("methode: ");
+    Serial.println(request->methodToString());
 
     if (SPIFFS.exists(request->url() ))
     then request->send(SPIFFS, request->url());
     else {
-        Serial.println(request->url() + " was requested through file service but not found!");
+        Serial.println(request->url() +
+                  " was requested through file service but not found!");
         request->send(404, "text/html", "Not found");
     }
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-#define repeat_and_count(N,i) for(unsigned i =0; i <N; i++) 
+#define repeat_and_index(N,i) for(unsigned i = 0; i < N; i++) 
 
 //Repeat N times
 #define repeat(N) for(unsigned VLNTWMNC_14882_1998qwerty=0; VLNTWMNC_14882_1998qwerty<N; VLNTWMNC_14882_1998qwerty++) 
